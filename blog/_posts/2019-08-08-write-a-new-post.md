@@ -335,14 +335,12 @@ Markdown symbols ```` ``` ```` can easily create a code block as follows:
 ````md
 ```
 This is a plaintext code snippet.
-```
-````
 
 #### Specifying Language
 
 Using ```` ```{language} ```` you will get a code block with syntax highlight:
 
-````markdown
+```markdown
 ```yaml
 key: value
 ```
