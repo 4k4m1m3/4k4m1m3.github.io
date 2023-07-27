@@ -49,7 +49,7 @@ permalink: /feed.xml
     <summary>{{ post.summary | strip }}</summary>
   {% else %}
     <summary>
-      {% include /4k4m1m3.github.io/blog/_includes/no-linenos.html content=post.content %}
+      {% include ../../_includes/no-linenos.html content=post.content %}
       {{ content  | strip_html | truncate: 400 }}
     </summary>
   {% endif %}
