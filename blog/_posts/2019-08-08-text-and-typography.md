@@ -102,12 +102,6 @@ Here is the `/path/to/the/file.extend`{: .filepath}.
 
 ## Code blocks
 
-### Common
-
-```
-This is a common code snippet, without syntax highlight and line number.
-```
-
 ### Specific Language
 
 ```bash

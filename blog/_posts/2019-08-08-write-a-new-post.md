@@ -336,19 +336,6 @@ Markdown symbols ```` ``` ```` can easily create a code block as follows:
 ```
 This is a plaintext code snippet.
 
-#### Specifying Language
-
-Using ```` ```{language} ```` you will get a code block with syntax highlight:
-
-```markdown
-```yaml
-key: value
-```
-````
-
-> The Jekyll tag `{% highlight %}` is not compatible with this theme.
-{: .prompt-danger }
-
 #### Line Number
 
 By default, all languages except `plaintext`, `console`, and `terminal` will display line numbers. When you want to hide the line number of a code block, add the class `nolineno` to it:
