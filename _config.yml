@@ -35,3 +35,5 @@ exclude:
     "node_modules",
     "package.json",
   ]
+include:
+  - blog/theme-chirpy
