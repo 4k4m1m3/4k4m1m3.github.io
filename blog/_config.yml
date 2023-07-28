@@ -1,5 +1,5 @@
 theme: jekyll-theme-chirpy
-baseurl: "/blog"
+baseurl: "../blog"
 lang: en
 timezone: America/Lima
 title: Blog
