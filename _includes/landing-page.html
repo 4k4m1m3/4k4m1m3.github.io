@@ -5,22 +5,24 @@
     </h1>
     <h1>
       <span id="txt-rotate" data-period="2000"
-        data-rotate='["{{site.typing_text}}", "Eterno noob", "Hacking ético", "Ciberseguridad", "Pentesting", "Aprendiz de Hackers"]'
+        data-rotate='["{{site.typing_text}}", "Comunidad Hacking Ético", "Eterno noob", "Hackers", "Padawan", "Ciberseguridad", "Pentesting"]'
       >
       </span>
     </h1>
     <div class="landing-icons">
-      {% if site.blog != null %}
-        <a class="social-link web" aria-label="Mi blog" href="mailto:{{site.blog}}">
+      {% if site.pagina_web_url != null %}
+        <a class="social-link web" aria-label="Pagina web" target="_blank" rel="noreferrer"
+          href="{{site.pagina_web_url}}"
+        >
           <svg viewBox="0 0 200 200" class="circle">
             <circle cx="100" cy="100" r="80" />
           </svg>
           <div class="social">
             <svg class="social-svg" viewBox="0 0 48 48">
-              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#hacker-news" | prepend: site.baseurl }}""></use>
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#web" | prepend: site.baseurl }}"></use>
             </svg>
           </div>
-          <span class="label">Blog</span>
+          <span class="label">Pagina Web</span>
         </a>
       {% endif %}
 
@@ -40,51 +42,35 @@
         </a>
       {% endif %}
 
-      {% if site.codepen_username != null %}
-        <a class="social-link" aria-label="My Codepen" target="_blank" rel="noreferrer"
-          href="https://codepen.io/{{site.codepen_username}}"
+      {% if site.discord_url != null %}
+        <a class="social-link discord" aria-label="Discord" target="_blank"
+          rel="noreferrer" href="{{site.discord_url}}"
         >
           <svg viewBox="0 0 200 200" class="circle">
             <circle cx="100" cy="100" r="80" />
           </svg>
           <div class="social">
             <svg class="social-svg" viewBox="0 0 48 48">
-              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#codepen" | prepend: site.baseurl }}"></use>
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#discord" | prepend: site.baseurl }}"></use>
             </svg>
           </div>
-          <span class="label">CodePen</span>
+          <span class="label">Discord</span>
         </a>
       {% endif %}
 
-      {% if site.dev_username != null %}
-        <a class="social-link" aria-label="My DEV" target="_blank" rel="noreferrer"
-          href="https://dev.to/{{site.dev_username}}"
+      {% if site.telegram_url != null %}
+        <a class="social-link telegram" aria-label="Telegram" target="_blank"
+          rel="noreferrer" href="{{site.telegram_url}}"
         >
           <svg viewBox="0 0 200 200" class="circle">
             <circle cx="100" cy="100" r="80" />
           </svg>
           <div class="social">
             <svg class="social-svg" viewBox="0 0 48 48">
-              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#dev" | prepend: site.baseurl }}"></use>
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#telegram" | prepend: site.baseurl }}"></use>
             </svg>
           </div>
-          <span class="label">DEV</span>
-        </a>
-      {% endif %}
-
-      {% if site.linkedin_username != null %}
-        <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank"
-          rel="noreferrer" href="https://www.linkedin.com/in/{{site.linkedin_username}}"
-        >
-          <svg viewBox="0 0 200 200" class="circle">
-            <circle cx="100" cy="100" r="80" />
-          </svg>
-          <div class="social">
-            <svg class="social-svg" viewBox="0 0 48 48">
-              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#linkedin-in" | prepend: site.baseurl }}"></use>
-            </svg>
-          </div>
-          <span class="label">LinkedIn</span>
+          <span class="label">Telegram</span>
         </a>
       {% endif %}
 
@@ -101,6 +87,22 @@
             </svg>
           </div>
           <span class="label">Twitter</span>
+        </a>
+      {% endif %}
+
+      {% if site.kick_url != null %}
+        <a class="social-link kick" aria-label="Kick" target="_blank"
+          rel="noreferrer" href="{{site.kick_url}}"
+        >
+          <svg viewBox="0 0 200 200" class="circle">
+            <circle cx="100" cy="100" r="80" />
+          </svg>
+          <div class="social">
+            <svg class="social-svg" viewBox="0 0 48 48">
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#kick" | prepend: site.baseurl }}"></use>
+            </svg>
+          </div>
+          <span class="label">Kick</span>
         </a>
       {% endif %}
     </div>
