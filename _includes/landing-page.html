@@ -58,6 +58,22 @@
         </a>
       {% endif %}
 
+      {% if site.twitch_url != null %}
+        <a class="social-link twitch" aria-label="twitch" target="_blank"
+          rel="noreferrer" href="{{site.twitch_url}}"
+        >
+          <svg viewBox="0 0 200 200" class="circle">
+            <circle cx="100" cy="100" r="80" />
+          </svg>
+          <div class="social">
+            <svg class="social-svg" viewBox="0 0 48 48">
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#twitch" | prepend: site.baseurl }}"></use>
+            </svg>
+          </div>
+          <span class="label">twitch</span>
+        </a>
+      {% endif %}
+
       {% if site.telegram_url != null %}
         <a class="social-link telegram" aria-label="Telegram" target="_blank"
           rel="noreferrer" href="{{site.telegram_url}}"
