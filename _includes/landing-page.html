@@ -10,6 +10,7 @@
       </span>
     </h1>
     <div class="landing-icons">
+
       {% if site.pagina_web_url != null %}
         <a class="social-link web" aria-label="Blog" target="_blank" rel="noreferrer"
           href="{{site.pagina_web_url}}"
@@ -19,7 +20,7 @@
           </svg>
           <div class="social">
             <svg class="social-svg" viewBox="0 0 48 48">
-              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#web" | prepend: site.baseurl }}"></use>
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#hacker-news" | prepend: site.baseurl }}"></use>
             </svg>
           </div>
           <span class="label">Blog</span>
@@ -107,15 +108,15 @@
       {% endif %}
 
       {% if site.kick_url != null %}
-        <a class="social-link kick" aria-label="Kick" target="_blank"
-          rel="noreferrer" href="{{site.kick_url}}"
+        <a class="social-link linkedin" aria-label="linkedin" target="_blank"
+          rel="noreferrer" href="{{site.linkedin_url}}"
         >
           <svg viewBox="0 0 200 200" class="circle">
             <circle cx="100" cy="100" r="80" />
           </svg>
           <div class="social">
             <svg class="social-svg" viewBox="0 0 48 48">
-              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#kick" | prepend: site.baseurl }}"></use>
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#linkedin-in" | prepend: site.baseurl }}"></use>
             </svg>
           </div>
           <span class="label">Kick</span>
